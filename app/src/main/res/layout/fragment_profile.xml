@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/app_background"
     tools:context="com.example.liam.saferjourneymockup.ProfileFragment">
 
     <LinearLayout
@@ -30,14 +31,14 @@
                 android:layout_height="wrap_content"
                 android:text="Peter"
                 android:textSize="30sp"
-                android:textColor="@color/textColorPrimary"
+                android:textColor="@color/white"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="02/02/2018"
                 android:textSize="20sp"
-                android:textColor="@color/textColorPrimary"
+                android:textColor="@color/white"
                 android:textStyle="bold"/>
         </LinearLayout>
         <ImageView
@@ -77,13 +78,13 @@
         android:elevation="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/colorPrimaryDark">
+        android:background="@color/colorAccentDark">
         <TextView
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/textColorPrimary"
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
             android:text="My driving report"/>
@@ -93,9 +94,11 @@
         android:layout_marginTop="30dp"
         android:elevation="10dp"
         android:layout_width="wrap_content"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="20sp"
+        android:textSize="15sp"
+        android:textAllCaps="false"
         android:background="@drawable/dashboard_btn"
         android:text="Edit profile"/>
 

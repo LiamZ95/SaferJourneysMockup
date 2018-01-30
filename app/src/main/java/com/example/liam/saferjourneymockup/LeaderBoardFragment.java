@@ -44,7 +44,9 @@ public class LeaderBoardFragment extends Fragment {
     class User {
 
         String points, photoId, userName;
-        User(String name, String points) {
+        int rank;
+        User(int rank, String name, String points) {
+            this.rank = rank;
             this.userName = name;
             this.points = points;
 //            this.photoId = photoId;
@@ -52,11 +54,8 @@ public class LeaderBoardFragment extends Fragment {
     }
 
     private void addUsers() {
-        userList.add(new User("Wukong", "13000"));
-        userList.add(new User("Micheal", "12000"));
-        userList.add(new User("Tim", "11000"));
-        userList.add(new User("Ada", "10000"));
-        userList.add(new User("Neo", "9000"));
-        userList.add(new User("Naruto", "8000"));
+        for (int i = 0; i < 1000; i++) {
+            userList.add(new User(i, ))
+        }
     }
 }

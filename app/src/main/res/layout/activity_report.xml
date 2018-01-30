@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/app_background"
     tools:context="com.example.liam.saferjourneymockup.ReportActivity">
 
     <LinearLayout
@@ -33,14 +34,14 @@
                 android:layout_height="wrap_content"
                 android:text="Peter"
                 android:textSize="30sp"
-                android:textColor="@color/textColorPrimary"
+                android:textColor="@color/white"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="02/02/2018"
                 android:textSize="20sp"
-                android:textColor="@color/textColorPrimary"
+                android:textColor="@color/white"
                 android:textStyle="bold"/>
         </LinearLayout>
         <ImageView
@@ -69,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="35sp"
                 android:textStyle="bold"
-                android:textColor="@color/textColorPrimary"
+                android:textColor="@color/white"
                 android:text="Your driving report"/>
             <LinearLayout
                 android:layout_marginTop="20dp"
@@ -82,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:paddingStart="20dp"
-                    android:textColor="@color/textColorPrimary"
+                    android:textColor="@color/white"
                     android:text="Driving distance: "/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -90,7 +91,7 @@
                     android:textSize="20sp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:textColor="@color/textColorPrimary"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     android:text="10km"/>
 
@@ -107,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:paddingStart="20dp"
-                    android:textColor="@color/textColorPrimary"
+                    android:textColor="@color/white"
                     android:text="Driving time: "/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,7 +116,7 @@
                     android:textSize="20sp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:textColor="@color/textColorPrimary"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     android:text="30min"/>
 
@@ -123,14 +124,15 @@
         </LinearLayout>
 
         <Button
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="300dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Check my ranking"
             android:background="@drawable/dashboard_btn"
             android:textAllCaps="false"
+            android:textColor="@color/white"
             android:layout_gravity="center"
-            android:textSize="30sp"/>
+            android:textSize="15sp"/>
     </LinearLayout>
 
 

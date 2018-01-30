@@ -17,21 +17,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/colorPrimary">
+        android:background="@drawable/app_background">
         <Button
             android:id="@+id/map_stop_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_btn"
             android:text="STOP"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:layout_gravity="center"
-            android:textSize="50sp"/>
+            android:textStyle="bold"
+            android:textSize="30sp"/>
     </LinearLayout>
 
 </LinearLayout>

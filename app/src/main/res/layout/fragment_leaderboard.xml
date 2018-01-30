@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/grey"
+    android:background="@drawable/app_background"
     tools:context="com.example.liam.saferjourneymockup.LeaderBoardFragment">
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
