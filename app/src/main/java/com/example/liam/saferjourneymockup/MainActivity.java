@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         startBtn = (Button) findViewById(R.id.main_start_btn);
         dashboardBtn = (Button) findViewById(R.id.main_dashboard_btn);
         pointTv = (TextView) findViewById(R.id.main_points_tv);
-        naviBtn = (Button) findViewById(R.id.main_nav_btn);
+//        naviBtn = (Button) findViewById(R.id.main_nav_btn);
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        naviBtn.setOnClickListener(new View.OnClickListener() {
+        startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MapsActivity.class);
@@ -37,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
         dashboardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+                startActivity(intent);
             }
         });
     }
