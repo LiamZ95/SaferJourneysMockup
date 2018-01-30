@@ -16,7 +16,7 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="@color/textColorPrimary"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="80dp"/>
     <Button
         android:id="@+id/main_start_btn"
         android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
     </LinearLayout>
     <Button
         android:id="@+id/main_dashboard_btn"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View dashboard"

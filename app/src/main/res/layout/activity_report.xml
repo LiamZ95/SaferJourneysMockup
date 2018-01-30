@@ -55,83 +55,84 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/report_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-        <TextView
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary"
+                android:text="Your driving report"/>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:text="Driving distance: "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:textStyle="bold"
+                    android:text="10km"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:text="Driving time: "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:textStyle="bold"
+                    android:text="30min"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="250dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:textColor="@color/textColorPrimary"
-            android:text="Your driving report"/>
-        <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:paddingStart="20dp"
-                android:textColor="@color/textColorPrimary"
-                android:text="Driving distance: "/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:textColor="@color/textColorPrimary"
-                android:textStyle="bold"
-                android:text="10km"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:paddingStart="20dp"
-                android:textColor="@color/textColorPrimary"
-                android:text="Driving time: "/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:textColor="@color/textColorPrimary"
-                android:textStyle="bold"
-                android:text="30min"/>
-
-        </LinearLayout>
+            android:text="Check my ranking"
+            android:background="@drawable/dashboard_btn"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
     </LinearLayout>
 
-    <Button
-        android:layout_marginTop="250dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check my ranking"
-        android:background="@drawable/dashboard_btn"
-        android:textAllCaps="false"
-        android:layout_gravity="center"
-        android:textSize="30sp"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:clickable="true"
-        android:layout_margin="@dimen/fab_margin" />
 
 </LinearLayout>
