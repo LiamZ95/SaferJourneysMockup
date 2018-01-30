@@ -12,9 +12,9 @@ import java.util.ArrayList;
 
 
 class RVAdapter extends RecyclerView.Adapter<RVAdapter.UserViewHolder>{
-    ArrayList<LeaderBoardFragment.User> usersList;
+    ArrayList<User> usersList;
 
-    RVAdapter(ArrayList<LeaderBoardFragment.User> usersList) {
+    RVAdapter(ArrayList<User> usersList) {
         this.usersList = usersList;
     }
 
@@ -22,14 +22,13 @@ class RVAdapter extends RecyclerView.Adapter<RVAdapter.UserViewHolder>{
         CardView cv;
         TextView userId;
         TextView userPoints;
-//        ImageView userPhoto;
-
+        TextView rank;
         UserViewHolder(View itemView) {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.cv);
             userId = (TextView) itemView.findViewById(R.id.cv_user_name);
             userPoints = (TextView) itemView.findViewById(R.id.cv_user_points);
-//            userPhoto = (ImageView) itemView.findViewById(R.id.cv_user_photo);
+            rank = (TextView) itemView.findViewById(R.id.cv_rank_tv);
         }
 
     }
@@ -44,7 +43,8 @@ class RVAdapter extends RecyclerView.Adapter<RVAdapter.UserViewHolder>{
     @Override
     public void onBindViewHolder(RVAdapter.UserViewHolder holder, int position) {
         holder.userId.setText(usersList.get(position).userName);
-        holder.userPoints.setText(usersList.get(position).points);
+        holder.userPoints.setText(String.valueOf(usersList.get(position).points));
+        holder.rank.setText(String.valueOf(usersList.get(position).rank));
 //        holder.userPhoto.setImageResource(usersList.get(position).photoId);
 
     }
